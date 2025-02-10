@@ -26,7 +26,7 @@ class ExampleTest {
         System.out.println("Test: testAddition");
         int result = 2 + 2;
 
-        Assertions.assertEquals(4, result);
+        assertEquals(4, result);
         assertNotEquals(9, result);
         assertTrue(result >= 4);
         assertFalse(result > 4);
@@ -70,15 +70,16 @@ class ExampleTest {
     }
 
 
-//    // 2.1. ПАРАМЕТРЕЗИРОВАННЫЕ МЕТОДЫ
-//    //Источник данных файл в формате CSV
-//    @ParameterizedTest
-//    @CsvFileSource(resources = "data.csv")
-//    void testWithCsvFileSource(String fruit, int rank, boolean flag) {
-//        System.out.println(fruit + "|" + rank + "|" + !flag);
-//        assertNotNull(fruit);
-//        assertTrue(rank > 0);
-//    }
+    // 2.1. ПАРАМЕТРЕЗИРОВАННЫЕ МЕТОДЫ
+    //Источник данных файл в формате CSV
+    @ParameterizedTest
+    @CsvFileSource(resources = "data.csv")
+    void testWithCsvFileSource(String fruit, int rank, boolean flag) {
+        System.out.println(fruit + "|" + rank + "|" + !flag);
+        assertNotNull(fruit);
+        assertTrue(rank > 0);
+    }
+
 
 
     @ParameterizedTest

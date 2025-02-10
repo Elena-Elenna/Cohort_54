@@ -70,7 +70,7 @@ public class Person {
     }
 
 
-    //TODO HW
+
     private boolean isPassvordValid(String password) {
     /*
     Требования к паролю

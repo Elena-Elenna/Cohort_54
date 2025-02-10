@@ -1,6 +1,6 @@
 package lesson_26.methods;
 
-import lists.MyList;
+import utils.MyList;
 
 public class UtilsGeneric {
     //МЕТОД ВОЗВРАЩАЮЩИЙ СТРОКОВОЕ ПРЕДСТАВЛЕНИЕ МАССИВА

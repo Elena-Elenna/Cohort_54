@@ -1,7 +1,7 @@
 package lesson_26.methods;
 
-import lists.MyArrayList;
-import lists.MyList;
+import utils.MyArrayList;
+import utils.MyList;
 
 public class App {
     public static void main(String[] args) {

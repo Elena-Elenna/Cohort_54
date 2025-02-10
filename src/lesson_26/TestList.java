@@ -1,6 +1,6 @@
 package lesson_26;
 
-import lists.MyArrayList;
+import utils.MyArrayList;
 
 import java.util.Arrays;
 

@@ -1,7 +1,7 @@
 package lesson_27;
 
-import lists.MyArrayList;
-import lists.MyList;
+import utils.MyArrayList;
+import utils.MyList;
 
 import java.util.Iterator;
 
