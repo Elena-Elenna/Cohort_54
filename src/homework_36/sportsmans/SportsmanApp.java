@@ -27,7 +27,7 @@ public class SportsmanApp {
         sportsmanArray[2] = new Sportsman("Bob", 100.40, 30);
         sportsmanArray[3] = new Sportsman("Tim", 50.03, 30);
         sportsmanArray[4] = new Sportsman("Hanna", 90.50, 26);
-        sportsmanArray[5] = new Sportsman("Tom", 75.80, 25);
+        sportsmanArray[5] = new Sportsman("Rom", 75.80, 25);
 
         Arrays.sort(sportsmanArray);
         for (Sportsman sportsman : sportsmanArray) {

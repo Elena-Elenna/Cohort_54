@@ -160,10 +160,18 @@ public class ComparatorApp {
 
         // Отсортировать машины по году выпуска, если год равен - отсортировать по модели в обратном порядке
         Arrays.sort(cars, Comparator.comparing(Car::getYear).thenComparing(Car::getModel, Comparator.reverseOrder()));
-        System.out.println(Arrays.toString(cars));
+        for (Car car : cars) {
+            System.out.println(car);
+        }
+        System.out.println("++++++++++++++++++++++++++++++++++++++++++++++++++++++\n");
+//        System.out.println(Arrays.toString(cars));
 
         // Отсортировать машины по году выпуска, если год равен - отсортировать по максимальной скорости в порядке возрастания
         Arrays.sort(cars, Comparator.comparing(Car::getYear).thenComparing(Car::getMaxSpeed).thenComparing(Car::getModel));
-        System.out.println(Arrays.toString(cars));
+
+        for (Car car : cars) {
+            System.out.println(car);
+        }
+//        System.out.println(Arrays.toString(cars));
     }
 }
