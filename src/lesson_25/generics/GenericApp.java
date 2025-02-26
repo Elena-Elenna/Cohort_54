@@ -6,7 +6,7 @@ public class GenericApp {
 
 //    GenericBox<Car> boxCar = new GenericBox<>();
 
-        GenericBox<String> box = new GenericBox<>("Hello");
+        Generics<String> box = new Generics<>("Hello");
 
         String str = box.getValue();
 

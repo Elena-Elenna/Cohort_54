@@ -5,18 +5,18 @@ import java.util.Arrays;
 public class StaticApp {
     public static void main(String[] args) {
 
-        System.out.println(StaticBlockDemo.counter);
-        System.out.println(Arrays.toString(StaticBlockDemo.colors));
+        System.out.println(StaticBlock.counter);
+        System.out.println(Arrays.toString(StaticBlock.colors));
 
-        StaticBlockDemo demo = new StaticBlockDemo("Title");
+        StaticBlock demo = new StaticBlock("Title");
 
 //        System.out.println(demo.toString());
 
-        StaticBlockDemo demo1 = new StaticBlockDemo("TestBlock");
+        StaticBlock demo1 = new StaticBlock("TestBlock");
 
         System.out.println(demo1.toString());
 
-        StaticBlockDemo demo2 = new StaticBlockDemo();
+        StaticBlock demo2 = new StaticBlock();
         System.out.println(demo2.toString());
     }
 }

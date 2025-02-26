@@ -1,7 +1,7 @@
 package lesson_05;
 
 public class Overflow {
-    public static void main(String[] args) {
+    public static void main(Strings[] args) {
 
         // Переполнение типа данных
         byte b1 = 127;
