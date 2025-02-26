@@ -29,9 +29,8 @@ public class PersonsApp {
     private static List<Person> personsList(List<Person> persons) {
         return persons.stream()
                 .filter(Objects::nonNull)
-                .filter(c -> Objects.nonNull(c.getName()) && Objects.nonNull(c.getCity()))
-                .filter(person -> person.getAge() > 25)
-                .filter(person -> person.getCity().equalsIgnoreCase("Berlin"))
+                .filter(p -> Objects.nonNull(p.getName()) && Objects.nonNull(p.getCity()))
+                .filter(p -> p.getAge() > 25 && p.getCity().equalsIgnoreCase("Berlin"))
                 .collect(Collectors.toList());
     }
 }

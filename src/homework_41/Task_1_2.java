@@ -30,7 +30,9 @@ public class Task_1_2 {
     }
 
     public static List<Integer> task_1 (List<Integer> list) {
-        return list.stream().filter(i -> i > 10 && i < 100 && i % 2 == 0).collect(Collectors.toList());
+        return list.stream()
+                .filter(i -> i > 10 && i < 100 && i % 2 == 0)
+                .collect(Collectors.toList());
     }
 
     public static List<String> task_2 (List<String> list1) {
