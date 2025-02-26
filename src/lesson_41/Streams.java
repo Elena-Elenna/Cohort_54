@@ -69,7 +69,7 @@ public class Streams {
     private static void task8() {
         Cat cat = new Cat("Bear", 5, "braun");
         Cat cat1 = new Cat("Python", 7, "green");
-        Cat cat2 = new Cat("Tiger", 3, "yellow");
+        Cat cat2 = new Cat("Tiger", 3, null);
         Cat cat3 = new Cat("Panda", 4, "black");
 
         Cat[] cats = {cat, cat1, null, cat2, cat3, new Cat(null, 10, "red")};
