@@ -60,8 +60,8 @@ public class Task {
 
 
     private static void task_2_Optional1() {
-        List<String> strings = Arrays.asList("abc", "apple", "banana", "kiwi", null, "cherry", "fig", "grape");
-        Optional<String> minLength = strings.stream()
+        List<String> list = Arrays.asList("abc", "apple", "banana", "kiwi", null, "cherry", "fig", "grape");
+        Optional<String> minLength = list.stream()
                 .filter(Objects::nonNull)
                 .min(Comparator.comparing(String::length));
         if (minLength.isPresent()) {
@@ -73,14 +73,14 @@ public class Task {
 
     private static void task_2_Optional2() {
         List<String> list = Arrays.asList(null, "Python", "Java", "Cat", "Dog", "Panda", "Abc");
-        Optional<String> min = list.stream()
+        Optional<String> minLength = list.stream()
                 .filter(Objects::nonNull)
                 .min(Comparator.comparing(String::length));
-        Optional<List<String>> strList = Optional.of(list.stream()
+        Optional<List<String>> stringList = Optional.of(list.stream()
                 .filter(Objects::nonNull)
-                .filter(s -> s.length() == min.get().length())
+                .filter(s -> s.length() == minLength.get().length())
                 .collect(Collectors.toList()));
-        strList.ifPresent(System.out::println);
+        stringList.ifPresent(System.out::println);
     }
 
     private static void task_3_Optional1() {
