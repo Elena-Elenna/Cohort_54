@@ -4,6 +4,8 @@ import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+import static java.util.Collections.max;
+
 public class Streams {
     public static void main(String[] args) {
          /*
@@ -61,7 +63,25 @@ public class Streams {
         // task5();
         // task6();
         // task7();
-         task8();
+         //task8();
+        task12();
+
+    }
+
+    private static void task12() {
+        List<Cat> cats = getListCats();
+        //Найти самое длинное имя кота из списка
+        //стрим котов -> стрим имен котов -> максимальная длина имени(сравнить имена по их длине)
+        Optional<String> name = cats.stream()
+                .filter(Objects::nonNull)
+                .map(Cat::getName)
+                .filter(Objects::nonNull)
+                .max(Comparator.comparing(String::length));
+        if (name.isPresent()) {
+            System.out.println(name.get());
+        }else {
+            System.out.println("No cats");
+        }
 
     }
 
