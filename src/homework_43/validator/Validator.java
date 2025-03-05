@@ -31,8 +31,6 @@ public class Validator {
             throw new ValidateException("Первый символ должен быть буквой");
     }
 
-
-
     public static void isPasswordValid(String password) throws ValidateException {
 
         if (password == null || password.length() < 8) {
