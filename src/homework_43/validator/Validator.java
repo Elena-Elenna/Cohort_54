@@ -10,7 +10,6 @@ public class Validator {
         if (email.indexOf('.', indexAt + 2) == -1)
             throw new ValidateException("Должна быть точка '.' после '@'");
 
-        // 3. После последней точки должно быть минимум 2 символа
         if (email.lastIndexOf('.') >= email.length() - 2)
             throw new ValidateException("После последней '.' должно быть минимум два символа");
 
